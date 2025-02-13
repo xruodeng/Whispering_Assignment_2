@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-bg"></div> <!-- 背景图片容器 -->
+        <h1 id="homeLink">Whispering</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#content">Content</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Search Tool -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for stories...">
+        <button onclick="searchStories()">Search</button>
+    </div>
+
+    <div id="home" class="container">
+        <!-- 第一个故事容器及其左侧正方形容器 -->
+        <div class="first-story-wrapper">
+            <!-- 左侧正方形容器 -->
+            <div class="square-box">
+            <!-- 右侧第一个故事容器 -->
+                <img src="images/first.jpg" alt="Photo">
+            </div>
+            <div class="story">
+                <h2>The Regular</h2>
+                <p>I used to work at a McDonald’s next to my neighborhood to supplement my husband’s income. Student loans, credit cards, and child-rearing all took their financial toll on us, and it soon became inevitable that I would have to get a job to help out, but that’s another story altogether. The reason I’m telling you this is because of one particular customer we had during my brief stint working there, a regular. This customer is the reason why I never want to work at a McDonald’s ever again....</p>
+                <a href="The-Regular/index.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="story">
+            <h2>The Haunted Mirror</h2>
+            <p>An antique mirror was brought into the old mansion. At first, it seemed like a beautiful piece of decor, but soon, the family noticed something strange. The reflection in the mirror didn't always match reality, and sometimes, it showed things that weren't there...</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="story">
+            <h2>The Whispering Shadows</h2>
+            <p>In the depths of the forest, there was a cabin that no one dared to approach. Legend had it that the shadows inside the cabin whispered to those who entered, driving them mad. One day, a group of friends decided to investigate, but none of them returned...</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="container" style="display: none;">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hi, I'm Kay Deng, a passionate enthusiast of horror short stories. Ever since I was a child, I've been captivated by the eerie, the mysterious, and the unsettling. There's something uniquely thrilling about a well-crafted horror story—the way it lingers in your mind, sending shivers down your spine long after you've finished reading.</p>
+            <p>I created this website to share my love for horror stories with others who appreciate the genre as much as I do. Here, you'll find a collection of chilling tales that range from classic ghost stories to modern psychological thrillers. Each story is carefully selected to evoke a sense of dread and wonder, transporting you to worlds where the line between reality and the supernatural blurs.</p>
+            <p>My goal is to make this website an immersive experience for horror lovers. From the dark, atmospheric design to the carefully curated content, every element is designed to draw you deeper into the stories. Whether you're a longtime fan of horror or new to the genre, I hope this site becomes a place where you can lose yourself in the macabre and the mysterious.</p>
+            <p>Thank you for visiting, and I hope you enjoy the stories as much as I do. If you have any feedback or suggestions, feel free to reach out through the contact page. Let's explore the shadows together!</p>
+        </div>
+    </div>
+
+    <!-- Content Page -->
+    <div id="content" class="container" style="display: none;">
+        <h2>Content Overview</h2>
+        <ul>
+            <li><a href="The-Regular/index.html">The Regular</a></li>
+            <li><a href="#">The Haunted Mirror</a></li>
+            <li><a href="#">The Whispering Shadows</a></li>
+            <li><a href="#">The Cursed Doll</a></li>
+            <li><a href="#">The Forgotten Cemetery</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="container" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>Have a story to share or feedback for us? Reach out below!</p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:xruodeng@gmail.com">xruodeng@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+14372557569">+1 437 255 7569</a></p>
+            <p><strong>Address:</strong> 100 McCaul St, Toronto, ON M5T 1G1, Canada</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Whispering. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
